@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>BT-JS4</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- BT5: TÍNH NGÀY, THÁNG, NĂM -->
+    <br>
+    <br>
+    <div class="form-group container">
+        <h4> BT5: TÍNH NGÀY, THÁNG, NĂM</h4>
+        <div class="form-group">
+            <p>Ngày</p>
+            <input type="number" class="form-control w-25" id="date">
+        </div>
+        <div class="form-group">
+            <p>Tháng</p>
+            <input type="number" class="form-control w-25" id="month">
+        </div>
+        <div class="form-group">
+            <p>Năm</p>
+            <input type="number" class="form-control w-25" id="year">
+        </div>
+        <br>
+        <br>
+        <button id="btnNgayHomQua" class="btn btn-success">NGÀY HÔM QUA</button>
+        <br>
+        <br>
+
+        <button id="btnNgayMai" class="btn btn-success">NGÀY MAI</button>
+        <br>
+        <br>
+        <div class="mt-2 alert alert-success">
+            Kết quả : <span id="ngayThangNam"></span>
+        </div>
+    </div>
+    <!-- BT6: TÍNH SỐ NGÀY CỦA THÁNG -->
+    <br>
+    <br>
+    <hr>
+    <div class="form-group container">
+        <h4> BT6: TÍNH SỐ NGÀY CỦA THÁNG VÀ NĂM</h4>
+        <div class="form-group">
+            <p>Tháng</p>
+            <input type="number" class="form-control w-25" id="mot">
+        </div>
+        <div class="form-group">
+            <p>Năm</p>
+            <input type="number" class="form-control w-25" id="hai">
+        </div>
+
+        <br>
+        <br>
+        <button id="btnTinhNgay" class="btn btn-success">TÍNH NGÀY</button>
+
+        <br>
+        <br>
+        <div class="mt-2 alert alert-success">
+            Kết quả : <span id="kqBt6"></span>
+        </div>
+    </div>
+    <!-- BT7 : Viết chương trình nhập vào số nguyên có 3 chữ số. In ra cách đọc nó. -->
+    <br>
+    <br>
+    <hr>
+    <div class="form-group container">
+        <h4> BT7: Viết chương trình nhập vào số nguyên có 3 chữ số. In ra cách đọc nó.</h4>
+        <div class="form-group">
+            <p>Nhập số</p>
+            <input type="number" class="form-control w-25" id="layDuLieu">
+        </div>
+
+
+        <br>
+        <br>
+        <button id="btnDocSo" class="btn btn-success">ĐỌC SỐ</button>
+
+        <br>
+        <br>
+        <div class="mt-2 alert alert-success">
+            Kết quả : <span id="kqBt7"></span>
+        </div>
+    </div>
+    <!-- BT8: TÌM SINH VIÊN XA TRƯỜNG NHẤT -->
+    <br>
+    <br>
+    <hr>
+    <div class="form-group container">
+        <h4> BT8: TÌM SINH VIÊN XA TRƯỜNG NHẤT</h4>
+        <div class="form-group d-flex mt-3">
+            <p class="mr-3">Sinh viên 1</p>
+            <input placeholder=" Nhập Tên Sinh Viên" type="text" class="form-control w-25 mr-3" id="sinhVien1">
+            <input placeholder="Tọa độ X" type="number" class="form-control w-25 mr-3" id="xX1">
+            <input placeholder="Tọa độ Y" type="number" class="form-control w-25" id="yY1">
+        </div>
+        <div class="form-group d-flex">
+            <p class="mr-3">Sinh viên 2</p>
+            <input placeholder=" Nhập Tên Sinh Viên" type="text" class="form-control w-25 mr-3" id="sinhVien2">
+            <input placeholder="Tọa độ X" type="number" class="form-control w-25 mr-3" id="xX2">
+            <input placeholder="Tọa độ Y" type="number" class="form-control w-25" id="yY2">
+        </div>
+        <div class="form-group d-flex">
+            <p class="mr-3">Sinh viên 3</p>
+            <input placeholder=" Nhập Tên Sinh Viên" type="text" class="form-control w-25 mr-3" id="sinhVien3">
+            <input placeholder="Tọa độ X" type="number" class="form-control w-25 mr-3" id="xX3">
+            <input placeholder="Tọa độ Y" type="number" class="form-control w-25" id="yY3">
+        </div>
+        <div class="form-group d-flex">
+            <p class="mr-3">Trường Học</p>
+            <input placeholder="Tọa độ X" type="number" class="form-control w-25 mr-3" id="xX4">
+            <input placeholder="Tọa độ Y" type="number" class="form-control w-25" id="yY4">
+
+
+        </div>
+
+
+        <br>
+        <br>
+        <button id="btnTim" class="btn btn-success">TÌM</button>
+
+        <br>
+        <br>
+        <div class="mt-2 alert alert-success">
+            Kết quả : <span id="kqBt8"></span>
+        </div>
+    </div>
+
+    <!-- MY JS -->
+    <script src="./js/index.js"></script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
